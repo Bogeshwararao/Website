@@ -1,38 +1,209 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+:root{
+  --primary-white:#fff;
+  --primary-dark: rgba(255,255,255,0);
+  --primary-black: #000;
+  --primary-v: #610f70;
+  --primary-blue: #0000FF;
+  --ease-out-quad: cubic-bezier(0.25,0.46,0.45,0.94);
+}
+
+body{
+  font-family: "mulish" "san-serif";
+}
+
+/* ******************** Navbar******************* */
+.logo{
+  width: 4.0rem;
+  height: 4.0rem;
+}
+nav .nav-link{
+  letter-spacing: .03rem;
+  cursor: pointer;
+}
+
+.navbar-nav > li> .nav-link{
+  /* color: var(--primary-white) !important; */
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
+
+  /* border-top: 0.18rem solid var(--primary-white); */
+}
+
+/* .navbar .nav-link:hover{
+  color: 	red;
+} */
+.navbar-nav.li.a:hover{
+  color:red;
+}
+.navbar-brand{
+  max-width: 17rem;
+}
+
+.navbar-nav > li > a.active , .navbar-nav> li > .nav-link:focus{
+  border-bottom: 0.18rem solid var(--primary-blue);
+}
+
+.navbar-nav > li > a.hover{
+ color:	#0000FF;
+}
+
+
+/* *************** Typed *************** */
+.typed{
+  font-weight: bold;
+  font-size: 3.5rem;
+  color: #5F9DF7;
+}
+
+/* ********* Home *********** */
+.abt{
+  text-align:center;
+  padding: 10px;
+}
+.abt-con1{
+  text-align:center;
+  padding-left: 10px;
+  padding-right:10px;
+  font-family: "mulish" "san-serif";
+  justifyContent: 'center';
+}
+.abt-con2{
+  text-align:center;
+  font-family: "mulish" "san-serif";
+}
+#header{
+  width: 100%;
+  height: 80vh;
+  margin-top: 100px;
+}
+
+.btn-contactMe {
+  width: 10rem;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: var(--primary-v);
+  border: 2px solid var(--primary-v);
+  text-decoration: none;
+}
+
+.btn-contactMe:hover {
+  background: #610f70;
+  color: #fff;
+}
+
+.header-img{
   text-align: center;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+
+
+/* **************** Contact ****************** */
+#contain{
+
+ 
+  
+  width: 30vw; 
+  display:flex;
+  border: 1px solid #e9ecef;
+  border-radius: 25px;
+  box-shadow: 1px 3px 10px #e9ecef;
+  background-color: white;
+}
+
+ #btn-submit{
+  margin-right: 5rem;
+  width: 8rem;
+  font-weight: 500;
+  letter-spacing: .5px;
+  font-size: 13px;
+  display: inline-block;
+  padding: 7px 20px;
+  border-radius: 10px;
+  transition: 0.2s;
+  color: var(--primary-v);
+  border: 2px solid var(--primary-blue);
+  text-decoration: none;
+}
+
+#btn-submit:hover {
+  background: blue;
+  color: #fff;
+}
+/* .register1{
+  max-width: 978px;
+  width: 70vw;
+  display:flex;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  box-shadow: 1px 3px 10px #e9ecef; 
+  background-color: white;
+} */
+ */
+ 
+
+/* responsive code */
+
+@media (max-width: 991px) {
+  #header {
+    height: 80vh;
+    text-align: center;
+  }
+
+  #header .header-img {
+    text-align: center;
+  }
+  #header .header-img img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  #header {
+    margin-top: 20px;
+  }
+  #header .typed {
+    font-size: 2rem;
+  }
+  #header h2 {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  #header h5 {
+    font-size: 10px;
+    margin-bottom: 30px;
+  }
+  #header .header-img img {
+    width: 70%;
   }
 }
