@@ -31,7 +31,9 @@ nav .nav-link{
 
   /* border-top: 0.18rem solid var(--primary-white); */
 }
-
+.navbar-nav{
+  margin-left:36.3rem;
+}
 /* .navbar .nav-link:hover{
   color: 	red;
 } */
