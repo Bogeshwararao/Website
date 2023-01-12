@@ -18,6 +18,9 @@ body{
 
 
 /**************NAVBAR***************/
+#nav-items-fin{
+  margin-left:20.5rem;
+}
 .acmnavlogo{
   width: 4.0rem;
   height: 4.0rem;
