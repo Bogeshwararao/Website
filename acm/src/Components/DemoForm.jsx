@@ -1,5 +1,5 @@
 import React from 'react';
-  
+import "./contact.css"
 class DemoForm extends React.Component {
     constructor() {
     super();
@@ -92,18 +92,18 @@ class DemoForm extends React.Component {
      
   render() {
     return (
-        
+        <div className='outline-contact'>
       <div className="d-flex align-items-center col-10 mx-auto" >
         <div className="my-3 mx-auto">
         <h1 className="text-center">Contact us</h1>
         <br></br>
-        <div className="container contact-div">
+        <div className="contact-div">
           <div className="row">
             <div className="">
         <form onSubmit={this.handleSubmit}>
   
           <div class="form-group">
-            <label for="name">Name:</label>
+            <label for="name" id='con-label'>Name:</label>
             <input 
               type="text" 
               name="name" 
@@ -117,7 +117,7 @@ class DemoForm extends React.Component {
           </div>
   
           <div class="form-group">
-            <label for="email">Email Address:</label>
+            <label for="email" id='con-label'>Email Address:</label>
             <input 
               type="text" 
               name="email" 
@@ -131,7 +131,7 @@ class DemoForm extends React.Component {
           </div>
  
           <div class="form-group">
-            <label for="Phone">Phone:</label>
+            <label for="Phone" id='con-label'>Phone:</label>
             <input 
               type="text" 
               name="phone" 
@@ -147,6 +147,7 @@ class DemoForm extends React.Component {
           
           <input id='btn-submit' type="submit" value="Submit" />
         </form>
+      </div>
       </div>
       </div>
       </div>

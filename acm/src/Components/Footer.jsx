@@ -10,14 +10,18 @@ const footer = () => {
     <div className='footer-bot'>
           
           
-          
+          <div className='res-foot'>
             <img src={sistlogofoot} alt="" className="sistfootlogo" />
-       
+            </div>
+            <div className='res-foot'>
             <img src={acmfoot} alt="" className="acmfootlogo" />
-            <div>
-           <h3 className='con-foot'>Contact us</h3>
+            </div>
+            <div className='res-foot'>
+           
              <ul className="con-fotfin">
-               
+               <li>
+               <h3 >Contact us</h3>
+               </li>
                 <li>
                    <img src={Email} alt="" /> Mail
                 </li>
