@@ -1,21 +1,13 @@
 const mongoose =require('mongoose')
 
-const Contactschema = new mongoose.Schema({
-     name:{
-        type:String,
-        required:true
-     },
-     email:{
-        type:String,
-        required:true
-     },
-     phone:{
-        type:Integer,
-        required:true
-     },
-     date:{
-        type:Date,
-        default:Date.now
-     }
-})
+const Contactschema = new mongoose.Schema(
+    {
+      name:String,
+      email:String,
+      phone:String,
+    },
+    {
+      collection:"acmdata"
+    }
+)
 module.exports =mongoose.model('acmdata',Contactschema)

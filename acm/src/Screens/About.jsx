@@ -2,19 +2,23 @@ import React from 'react'
 import Abhi from "../Assets/img2p.jpg"
 const About = () => {
   return (
-    <div>
-        <div className='about-con-part1'>
-        <img src={Abhi} alt="" className='about-con1'/>
-       
-        {/* <h3 className='text'>What we are</h3> */}
-        <p className='text'>ACM brings together computing educators, researchers, and professionals to inspire dialogue, share resources, and address the field's challenges. As the world’s largest computing society, ACM strengthens the profession's collective voice through strong leadership, promotion of the highest standards, and recognition of technical excellence. ACM supports the professional growth of its members by providing opportunities for life‐long learning, career development, and professional networking.
-
-Founded at the dawn of the computer age, ACM’s reach extends to every part of the globe, with more than half of its more than 100,000 members residing outside the U.S.  Its growing membership has led to Councils in Europe, India, and China, fostering networking opportunities that strengthen ties within and across countries and technical communities.  Their actions enhance ACM’s ability to raise awareness of computing’s important technical, educational, and social issues around the world. </p>
-        
-        
-        
+    <section id="Header" className="d-flex align-items-center">
+    <div className="container-fluid">
+      <div className="row">
+        <div className="col-10 mx-auto">
+          <div className="row">
+            <div className="col-md-6 pb-2 pt-5 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column">
+              <h5 className="text-muted" style={{ inlineHeight: "1.5" }}>
+              </h5>
+            </div>
+            <div id='img-abt' className="col-lg-6 order1 order-lg-2 header-img pt-4">
+              <img src={Abhi} alt="" className="img-fluid animated" />
+            </div>
+          </div>
         </div>
-        </div>
+      </div>
+    </div>
+  </section>
   )
 }
 

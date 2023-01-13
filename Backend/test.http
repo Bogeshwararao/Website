@@ -1,0 +1,9 @@
+Post http://localhost:4000/api/Contact
+Content-Type: application/json
+
+
+{
+    "name":"bogesh",
+    "email":"bogesh@gmail.com",
+    "phone": "8008842428"
+}
