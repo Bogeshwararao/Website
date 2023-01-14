@@ -22,9 +22,9 @@ const footer = () => {
                <li>
                <h3 >Contact us</h3>
                </li>
-                <li>
+                <a href="abhiramravipati9@gmail.co" target="/blank"><li>
                    <img src={Email} alt="" /> Mail
-                </li>
+                </li></a>
                 <li>
                 <img src={Linkedin} alt="" /> Linked in
                 </li>

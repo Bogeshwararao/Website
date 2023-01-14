@@ -14,7 +14,9 @@
 body{
   font-family: "mulish" "san-serif";
 }
-
+a { 
+  text-decoration: none; 
+}
 
 
 /**************NAVBAR***************/

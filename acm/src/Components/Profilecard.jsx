@@ -19,9 +19,9 @@ const Profilecard = (props) => {
           <p id="Title-team-des" className="card-text">{props.description}</p>
           <ul className="d-flex list-icon" id="Profile-links">
           
-          <li  id="Mail-icon"><a href={props.maillink}><img src={Mail} alt="" ></img></a></li>
-          <li  id="Linked-icon" ><a href={props.linkedinlink}><img src={Linked} alt="" ></img></a></li>
-            <li  id="Insta-icon"><a href={props.instalink}><img src={Insta} alt="" ></img></a></li>
+          <li  id="Mail-icon"><a href={props.maillink}><img src={Mail} alt="" target="/blank" ></img></a></li>
+          <li  id="Linked-icon" ><a href={props.linkedinlink}><img src={Linked} alt="" target="/blank" ></img></a></li>
+            <li  id="Insta-icon"><a href={props.instalink}><img src={Insta} alt="" target="/blank"></img></a></li>
           
           </ul>
         </div>

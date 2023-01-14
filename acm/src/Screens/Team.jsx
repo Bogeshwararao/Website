@@ -17,7 +17,9 @@ const Team = () => {
               title={value.title}
               description={value.description}
               imgsrc={value.imgsrc}
-              link={value.link}
+              maillink={value.maillink}
+              linkedinlink={value.linkedinlink}
+              instalink={value.instalink}
             ></Profilecard>
           );
         })}
