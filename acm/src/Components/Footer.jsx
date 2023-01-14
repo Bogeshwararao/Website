@@ -22,15 +22,19 @@ const footer = () => {
                <li>
                <h3 >Contact us</h3>
                </li>
-                <a href="abhiramravipati9@gmail.co" target="/blank"><li>
+                <a id='foot-link' href="mailto:acm@sathyabama.ac.in" target="/blank"><li>
                    <img src={Email} alt="" /> Mail
                 </li></a>
+                <a id='foot-link' href="https://www.linkedin.com/company/acm-sist-student-chapter/" target="/blank">
                 <li>
+               
                 <img src={Linkedin} alt="" /> Linked in
-                </li>
+                </li> </a>
+                <a id='foot-link' href="https://instagram.com/acmsist?igshid=YmMyMTA2M2Y=" target="/blank">
                 <li>
                 <img src={Insta} alt="" />  Instagram
                 </li>
+                </a>
              </ul>
             </div>
               
