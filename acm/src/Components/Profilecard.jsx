@@ -6,14 +6,14 @@ const Profilecard = (props) => {
   return (
     <div className="col-md-3 col-0 mx-auto my-2">
       <div className="card blog-card ">
-        <a href={props.link}>
+     
           <img
            id="Profile-img"
             className="card-img-top Project-Card-img rounded-circle"
             src={props.imgsrc}
             alt="Card-img"
           />
-        </a>
+       
         <div className="card-body">
           <h5 id="Title-team" className="card-title font-weight-bold">{props.title}</h5>
           <p id="Title-team-des" className="card-text">{props.description}</p>

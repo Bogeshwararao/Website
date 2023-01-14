@@ -22,9 +22,9 @@ const Leaddetails = [
       title: "Abhiram Ravipati",
       imgsrc: Abhi,
       description: "Chairperson, ACM SIST",
-      maillink: "",
-      instalink:"",
-      linkedinlink:"",
+      maillink: "abhiramravipati9@gmail.com",
+      instalink:"https://www.instagram.com/abhiram.ravipati1819/",
+      linkedinlink:"www.linkedin.com/in/abhiram1819",
     },
     {
       title: " Sareena Ismath",
