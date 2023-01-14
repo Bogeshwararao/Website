@@ -1,7 +1,7 @@
 import Abhi from "../Assets/img2p.jpg"
 import Abhishek from "../Assets/AbhishekManikandan.jpg"
 import Roshan from "../Assets/Roshan.jpg"
-
+import Dharshini from "../Assets/Dharshini.jpg"
 
 
 
@@ -109,7 +109,7 @@ const Leaddetails = [
     },
     {
       title: "Dharshini R",
-      imgsrc: Abhi,
+      imgsrc: Dharshini,
       description: "Lead, Technical Team",
       maillink: "mailto:soundaryaraja48@gmail.com",
       instalink:"https://www.instagram.com/unearthed_dd/",
