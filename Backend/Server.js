@@ -1,6 +1,18 @@
 const express=require('express');
 const app = express()
-app.json(express.json)
+const mongoose = require('mongoose');
+app.use(express.json());
+
+const mongoourl = "mongodb+srv://ACM-SIST:ACM-SIST@cluster0.sqkvcvq.mongodb.net/?retryWrites=true&w=majority"
+
+mongoose.connect(mongoourl,{
+    useNewUrlParser:true
+}).then(()=>{console.log("connected to database");
+}).catch((err) => { console.log(err);
+})
+
+
+
 
 
 app.listen(5000,()=>{
