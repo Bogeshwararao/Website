@@ -2,8 +2,14 @@ import Abhi from "../Assets/img2p.jpg"
 import Abhishek from "../Assets/AbhishekManikandan.jpg"
 import Roshan from "../Assets/Roshan.jpg"
 import Dharshini from "../Assets/Dharshini.jpg"
-
-
+import Cyrus from "../Assets/Cyrus.jpg"
+import Devarsh from "../Assets/Devarsh.jpg"
+import Leela from "../Assets/Leela.jpg"
+import Samiha from "../Assets/Samiha.jpg"
+import Snowlin from "../Assets/Snowlin.jpg"
+import Hibha from "../Assets/Hibha.jpg"
+import Arun from "../Assets/Arun.jpg"
+import Syed from "../Assets/syed.jpg"
 
 
 
@@ -44,7 +50,7 @@ const Leaddetails = [
     },
     {
       title: "Samiha Syed",
-      imgsrc: Abhi,
+      imgsrc: Samiha,
       description: "Vice-Chairperson, ACM-W SIST",
       maillink: "mailto:syeedsamiha@gmail.com",
       instalink:"https://www.instagram.com/samihasyeed/?igshid=YmMyMTA2M2Y%3D",
@@ -52,7 +58,7 @@ const Leaddetails = [
     },
     {
       title: "Christopeher Cyrus",
-      imgsrc: Abhi,
+      imgsrc: Cyrus,
       description: "Secretary, ACM SIST",
       maillink: "mailto:chriscyrus6268@gmail.com",
       instalink:"https://www.instagram.com/c.cyrus01/",
@@ -60,7 +66,7 @@ const Leaddetails = [
     },
     {
       title: "Hibha Kaleem",
-      imgsrc: Abhi,
+      imgsrc: Hibha,
       description: "Secretary, ACM-W SIST",
       maillink: "mailto:hibhakaleem271@gmail.com",
       instalink:"https://www.instagram.com/hk27_01/",
@@ -68,7 +74,7 @@ const Leaddetails = [
     },
     {
       title: "Devarsh",
-      imgsrc: Abhi,
+      imgsrc: Devarsh,
       description: "Treasurer, ACM SIST",
       maillink: "",
       instalink:"",
@@ -76,7 +82,7 @@ const Leaddetails = [
     },
     {
       title: "Leela Sri Chowdary",
-      imgsrc: Abhi,
+      imgsrc: Leela,
       description: "Treasurer, ACM-W SIST",
       maillink: "mailto:leelasric@gmail.com",
       instalink:"https://instagram.com/chloeric_cuckoo/",
@@ -84,7 +90,7 @@ const Leaddetails = [
     },
     {
       title: "Arun Kumar L",
-      imgsrc: Abhi,
+      imgsrc: Arun,
       description: "Lead, Content Team",
       maillink: "mailto:arunkumarlagishetty668@gmail.com ",
       instalink:"https://instagram.com/_its_.arun__?igshid=NTA5ZTk1NTc=",
@@ -92,7 +98,7 @@ const Leaddetails = [
     },
     {
       title: "Snowlin Paz David",
-      imgsrc: Abhi,
+      imgsrc: Snowlin,
       description: "Lead, Design Team",
       maillink: "mailto:snowlin1363@gmail.com ",
       instalink:"https://www.instagram.com/snowzz_136/",
@@ -117,7 +123,7 @@ const Leaddetails = [
     },
     {
       title: "Syed Faisal Rahman",
-      imgsrc: Abhi,
+      imgsrc: Syed,
       description: "Co-Lead, Content Team",
       maillink: "mailto:faisalcrane2004@gmail.com",
       instalink:"https://instagram.com/_faisalll7_?igshid=ZDdkNTZiNTM=",
