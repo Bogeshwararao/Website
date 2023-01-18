@@ -11,8 +11,8 @@ const EventsDisplay = (props) => {
     <div className='Total-event'>
        <div className="card" id='Event-gap'>
       <img className="card-img-top " id="event-img" src={props.img} alt="" />
-      <h3 className='card-title' >{props.title}</h3>
-      <p className='card-body'>{props.discription}</p>
+      <h3 className='card-title' id='event-title' >{props.title}</h3>
+      <p className='card-body' id='event-discription'>{props.discription}</p>
       {/* <p>
         <button>Add to Cart</button>
       </p> */}

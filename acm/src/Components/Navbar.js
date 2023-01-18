@@ -17,9 +17,9 @@ import Contact from "../Screens/Contact";
 function CollapsibleExample() {
   return (
     <BrowserRouter>
-    <>
+    < div >
     <Navbar collapseOnSelect expand="sm">
-      <Container>
+      <Container id="Nav-midlle">
         <Navbar.Brand href="#home"><img src={ACMlogo} alt="" className="acmnavlogo" /></Navbar.Brand>
         
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -27,7 +27,7 @@ function CollapsibleExample() {
         
         </Navbar.Collapse>
         <Navbar.Collapse >
-        <Nav  id='total-nav-items'>
+        <Nav  id="Nav-midlle-items" >
            
            <Nav.Link id="homelink" as={Link} to="/" >Home</Nav.Link>
            <Nav.Link as={Link} to="/About" >About</Nav.Link>
@@ -49,7 +49,7 @@ function CollapsibleExample() {
         </Routes>
     
    </div>
-    </>
+    </div>
     </BrowserRouter>
   );
 }

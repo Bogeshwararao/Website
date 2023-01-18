@@ -1,7 +1,9 @@
 import React from 'react'
+import Footer from "../Components/Footer"
 import Abhi from "../Assets/img2p.jpg"
 const About = () => {
   return (
+    <>
     <section id="Header" className="d-flex align-items-center">
     <div className="container-fluid">
       <div className="row">
@@ -12,13 +14,17 @@ const About = () => {
               </h5>
             </div>
             <div id='img-abt' className="col-lg-6 order1 order-lg-2 header-img pt-4">
-              <img src={Abhi} alt="" className="img-fluid animated" />
+              <img src={Abhi} alt="" className="img-fluid animated"  id='Abt-img' />
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+  
+
+  <Footer/>
+  </>
   )
 }
 

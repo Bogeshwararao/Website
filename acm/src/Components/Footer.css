@@ -21,6 +21,7 @@ body{
     letter-spacing: 0.5px;
 }
 .footer-bot {
+    margin-top:4.5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -37,4 +38,7 @@ body{
     text-decoration: none;
     color:#000;
 
+}
+#foot-hover:hover{
+    transform: scale(1.10);
 }

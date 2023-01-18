@@ -38,13 +38,7 @@ const Event = () => {
     <Carousel showDots={true} responsive={responsive}>
         {EventDisplay}
       </Carousel>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
 
-<br></br>
 <Footer />
    </>
   );
