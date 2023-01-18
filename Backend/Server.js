@@ -1,13 +1,23 @@
 const express=require('express');
 const app = express()
 const mongoose = require('mongoose');
+const dotenv =require("dotenv");
 app.use(express.json());
+dotenv.config({path:'./config.env'});
 
-const mongoourl = "mongodb+srv://ACM-SIST:ACM-SIST@cluster0.sqkvcvq.mongodb.net/?retryWrites=true&w=majority"
+
+const mongoourl = process.env.DATABASEACCESS;
+const PORT = process.env.PORT
+
+
 
 mongoose.connect(mongoourl,{
-    useNewUrlParser:true
-}).then(()=>{console.log("connected to database");
+    useNewUrlParser:true,
+    // useCreateIndex:true,
+    // userUnifiedTopology:true,
+    // useFindAndmodify:false
+}).then(()=>{
+    console.log("connected to database");
 }).catch((err) => { console.log(err);
 })
 
@@ -15,7 +25,29 @@ mongoose.connect(mongoourl,{
 
 
 
-app.listen(5000,()=>{
+
+
+require("./Schemacontact");
+
+const user = mongoose.model("acmdata");
+
+
+app.post("/Contact",async(req,res)=>{
+    const{username,useremail,userphone}= req.body;
+    try{
+        await user.create({
+            username,
+            useremail,
+            userphoneno,
+        });
+        res.send({status:"ok"})
+    }catch(error){
+        res.send({status:"error"})
+    }
+})
+
+
+app.listen(PORT,()=>{
     console.log("server started");
 })
 
@@ -40,53 +72,3 @@ app.listen(5000,()=>{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const express =require('express')
-// const app= express()
-// const mongoose =require('mongoose')
-// // const dotenv = require('dotenv')
-// // const routesUrls =require('../Backend/routes')
-// // const cors = require('cors')
-// app.use(express.json())
-
-// // dotenv.config()
-
-// // mongoose.connect(process.env.DATA_BASE_ACCESS,()=> console.log("Database connected"))
-// const mongoUrl = "mongodb+srv://ACM-SIST:ACM-SIST@cluster0.glgcpzn.mongodb.net/?retryWrites=true&w=majority";
-
-// mongoose.connect(mongoUrl,{
-    
-// }).then(()=>{
-//     console.log("Connected to databse")
-// }).catch(err=>console.log(err))
-
-
-
-
-
-// require("../Backend/Schemacontact");
-// const user = mongoose.model("acmdata");
-
-// // app.post("/Contact",async(req,res)=>{
-// //     const {name,email,phone}.req.body;
-// //     try{
- 
-// //     }
-// // } )
-// // app.use(cors())
-// // app.use('/api',  routesUrls )
-// app.listen(4000,()=>console.log("server is up and running"))

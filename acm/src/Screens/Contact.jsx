@@ -1,13 +1,39 @@
 // eslint-disable-next-line
-import React, { useState } from "react";
+import React, { useState ,Component } from "react";
 import Footer from "../Components/Footer"
 import "react-toastify/dist/ReactToastify.css";
 import Contactimg from "../Assets/contact.svg"
- 
+ import Axios from 'axios'
 const Contact = () => {
- 
+    const url ="./http://localhost:5000/Contact"
+    const [data,setData]= useState({
+      username:"",
+      useremail:"",
+      userphone:""
+    })
+    function submit(e) {
+         e.preventDefault();
+         Axios.post(url,{
+          username:data.username,
+          useremail:data.useremail,
+          userphone:data.useremail
+         })
+         .then(res =>{
+          console.log(res.data)
+         })
+    }
+
+
+
+    function handle(e){
+      const newdata ={...data}
+      newdata[e.target.id]= e.target.value
+      setData(newdata)
+      console.log(newdata)
+    }
   return (
     <>
+    <form onSubmit={(e)=>submit(e)}>      
      <section>
       <div
         class="d-flex flex-column min-vh-100 justify-content-center"
@@ -22,7 +48,8 @@ const Contact = () => {
                   <form class="m-5">
                     <div class="mb-3">
                       <label class="form-label" for="username">Username :</label>
-                      <input class="form-control" type="text" id="username" placeholder="Enter your name" required/>
+                      <input  onChange={(e)=>handle(e)} id="username" value={data.username}  class="form-control" type="text"  placeholder="Enter your name" required
+                     />
                     </div>
                     <div class="mb-3">
                       <label class="form-label" for="email">E-mail :</label>
@@ -30,8 +57,8 @@ const Contact = () => {
                       placeholder="Enter your email" required
                         class="form-control"
                         type="email"
-                        id="email"
-                      />
+                
+                        onChange={(e)=>handle(e)} id="useremail" value={data.useremail}  />
                     </div>
                     <div class="mb-3">
                       <label class="form-label" for="phone">Phone number :</label>
@@ -39,7 +66,7 @@ const Contact = () => {
                       placeholder="Enter your phone number" required
                         class="form-control"
                         type="tel"
-                        id="phone"
+                        onChange={(e)=>handle(e)} id="userphone" value={data.userphone}
                       />
                     </div>
                     <div class="">
@@ -72,7 +99,7 @@ const Contact = () => {
     <br></br>
     <br></br>
     <br></br>
-    
+    </form>
       <Footer />
     </>
   );

@@ -2,12 +2,12 @@ const mongoose =require('mongoose')
 
 const Contactschema = new mongoose.Schema(
     {
-      name:String,
-      email:String,
-      phone:String,
+      username:String,
+      useremail:String,
+      userphoneno:String,
     },
     {
       collection:"acmdata"
     }
 )
-module.exports =mongoose.model('acmdata',Contactschema)
+module.exports =mongoose.model("acmdata",Contactschema)
