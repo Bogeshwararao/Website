@@ -27,7 +27,7 @@ a {
   width: 4.0rem;
   height: 4.0rem;
 }
-.Nav.Link:focus{
+#Nav-midlle-items:focus{
   border-bottom: 0.18rem solid var(--primary-blue);
 }
 #Nav-midlle-items{
