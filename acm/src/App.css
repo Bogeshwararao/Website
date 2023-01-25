@@ -30,14 +30,9 @@ a {
 #Nav-midlle-items:focus{
   border-bottom: 0.18rem solid var(--primary-blue);
 }
-#Nav-midlle-items{
-  
-  margin-left:15.5rem;
+#responsive-navbar-nav{
+ justify-content: flex-end;
 }
-.hidden-navbar{
-     margin-right:25.5rem;
-}
-
 
 
 

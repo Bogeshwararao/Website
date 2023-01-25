@@ -24,9 +24,6 @@ function CollapsibleExample() {
         
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className="hidden-navbar">
-        
-        </Navbar.Collapse>
-        <Navbar.Collapse >
         <Nav  id="Nav-midlle-items" >
            
            <Nav.Link id="homelink" as={Link} to="/" >Home</Nav.Link>
@@ -35,8 +32,19 @@ function CollapsibleExample() {
            <Nav.Link as={Link} to="/Event" > Event</Nav.Link>
            <Nav.Link as={Link} to="/Contact" > Contact us</Nav.Link>
 
-        </Nav>
+        </Nav> 
         </Navbar.Collapse>
+        {/* <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav  id="Nav-midlle-items" >
+           
+           <Nav.Link id="homelink" as={Link} to="/" >ome</Nav.Link>
+           <Nav.Link as={Link} to="/About" >About</Nav.Link>
+           <Nav.Link as={Link} to="/Team">Team</Nav.Link>
+           <Nav.Link as={Link} to="/Event" > Event</Nav.Link>
+           <Nav.Link as={Link} to="/Contact" > Contact us</Nav.Link>
+
+        </Nav>
+        </Navbar.Collapse> */}
       </Container>
     </Navbar>
    <div>
