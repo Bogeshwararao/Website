@@ -4,7 +4,14 @@ import Footer from "../Components/Footer"
 import "react-toastify/dist/ReactToastify.css";
 import Contactimg from "../Assets/contact.svg"
  import Axios from 'axios'
+ import Aos from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 const Contact = () => {
+  useEffect(()=>{
+    Aos.init({duration: 1800});
+},[]);
     const url ="./http://localhost:5000/Contact"
     const [data,setData]= useState({
       username:"",
@@ -33,6 +40,7 @@ const Contact = () => {
     }
   return (
     <>
+    <div data-aos="flip-left">
     <form onSubmit={(e)=>submit(e)}>      
      <section>
       <div
@@ -93,6 +101,7 @@ const Contact = () => {
       </div>
     </section>
     </form>
+    </div>
       <Footer />
     </>
   );

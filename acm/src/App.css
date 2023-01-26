@@ -19,6 +19,10 @@
 #nav-con-btn{
   margin-bottom:0.5rem;
 }
+.nav-item{
+    font-weight:500;
+    font-size:10px;
+}
 .navbar-nav > a.active , .navbar-nav>  .nav-link:focus{
   border-bottom: 0.18rem solid var(--primary-blue);
 }
