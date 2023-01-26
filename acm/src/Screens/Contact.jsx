@@ -71,7 +71,7 @@ const Contact = () => {
                     </div>
                     <div class="">
                       <input
-                        type="submit"
+                        type="Submit"
                         class="form-control btn btn-primary mt-3"
                       />
                     </div>

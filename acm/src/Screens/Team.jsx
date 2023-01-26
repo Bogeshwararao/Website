@@ -8,7 +8,7 @@ import { useEffect } from 'react';
 
 const Team = () => {
   useEffect(()=>{
-      Aos.init({duration: 2000});
+      Aos.init({duration: 1800});
   },[]);
   return (
     <>

@@ -12,6 +12,7 @@
     "aos": "^2.3.4",
     "axios": "^1.2.2",
     "bootstrap": "^5.2.3",
+    "file-saver": "^2.0.5",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0",

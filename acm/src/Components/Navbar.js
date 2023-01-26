@@ -20,32 +20,25 @@ function CollapsibleExample() {
     < div >
     <Navbar collapseOnSelect expand="sm">
       <Container id="Nav-midlle">
-        <Navbar.Brand href="#home"><img src={ACMlogo} alt="" className="acmnavlogo" /></Navbar.Brand>
-        
+        <Navbar.Brand href="#home"><img src={ACMlogo} alt="" className="acmnavlogo" />
+                      </Navbar.Brand>
+       
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        
         <Navbar.Collapse id="responsive-navbar-nav" className="hidden-navbar">
-        <Nav  id="Nav-midlle-items" >
-           
+        <Nav  id="Nav-midlle-items">
            <Nav.Link id="homelink" as={Link} to="/" >Home</Nav.Link>
            <Nav.Link as={Link} to="/About" >About</Nav.Link>
            <Nav.Link as={Link} to="/Team">Team</Nav.Link>
            <Nav.Link as={Link} to="/Event" > Event</Nav.Link>
-           <Nav.Link as={Link} to="/Contact" > Contact us</Nav.Link>
-
+           <Nav.Link as={Link} to="/Contact" >
+           <button type="button" class="btn btn-primary">Contact us</button>
+                      </Nav.Link>
         </Nav> 
         </Navbar.Collapse>
-        {/* <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav  id="Nav-midlle-items" >
-           
-           <Nav.Link id="homelink" as={Link} to="/" >ome</Nav.Link>
-           <Nav.Link as={Link} to="/About" >About</Nav.Link>
-           <Nav.Link as={Link} to="/Team">Team</Nav.Link>
-           <Nav.Link as={Link} to="/Event" > Event</Nav.Link>
-           <Nav.Link as={Link} to="/Contact" > Contact us</Nav.Link>
-
-        </Nav>
-        </Navbar.Collapse> */}
+        
       </Container>
+     
     </Navbar>
    <div>
     <Routes>

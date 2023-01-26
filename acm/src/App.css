@@ -33,6 +33,10 @@ a {
 #responsive-navbar-nav{
  justify-content: flex-end;
 }
+#nav-btn{
+  /* justify-items: flex-end; */
+  float:right;
+}
 
 
 
@@ -163,6 +167,39 @@ transform: scale(1.25);
   font-size: 16px;
   letter-spacing: 0.5px;
   
+}
+#event-total{
+  align-items:center;
+ margin-left: 0.5rem;
+ //margin-top:2.5rem;
+}
+.container-fluid{
+  margin-top:2.5rem;
+}
+#Header{
+  margin-left:6.5rem;
+  margin-bottom:2.5rem;
+}
+#evt-det{
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+#evt-img{
+  margin-bottom:1.5rem;
+  width:20.5rem;
+  height:13.5rem;
+  border-radius:20px;
+}
+#evt-register{
+  margin-right:1.5rem;
+  margin-left:1.5rem;
+  /* margin-top:1.5rem; */
+}
+
+#evt-Brocher{
+  margin-left:1.5rem;
+  /* margin-top:1.5rem; */
 }
 .Total-event{
   margin: 2rem;
