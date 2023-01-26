@@ -27,12 +27,15 @@ function CollapsibleExample() {
         
         <Navbar.Collapse id="responsive-navbar-nav" className="hidden-navbar">
         <Nav  id="Nav-midlle-items">
-           <Nav.Link id="homelink" as={Link} to="/" >Home</Nav.Link>
-           <Nav.Link as={Link} to="/About" >About</Nav.Link>
-           <Nav.Link as={Link} to="/Team">Team</Nav.Link>
-           <Nav.Link as={Link} to="/Event" > Event</Nav.Link>
+          <div className='navbar-nav'>
+           <Nav.Link as={Link} to="/"  className='nav-item'>Home</Nav.Link>
+           <Nav.Link as={Link} to="/About" className='nav-item'>About</Nav.Link>
+           <Nav.Link as={Link} to="/Team" className='nav-item'>Team</Nav.Link>
+           <Nav.Link as={Link} to="/Event" className='nav-item'> Event</Nav.Link>
+           </div>
            <Nav.Link as={Link} to="/Contact" >
-           <button type="button" class="btn btn-primary">Contact us</button>
+           
+           <button type="button" class="btn btn-primary" id='nav-con-btn'>Contact us</button>
                       </Nav.Link>
         </Nav> 
         </Navbar.Collapse>

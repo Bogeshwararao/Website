@@ -6,7 +6,7 @@ const Profilecard = (props) => {
   return (
     
     <div className="col-md-3 col-0 mx-auto my-2">
-      <div data-aos="fade-left row">
+      <div data-aos="flip-left">
       <div className="card blog-card ">
      
           <img

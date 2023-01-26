@@ -10,7 +10,18 @@
   --ease-out-quad: cubic-bezier(0.25,0.46,0.45,0.94);
 }
 
-
+.navbar-nav > .nav-link{
+  /* color: var(--primary-white) !important; */
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+  /* border-top: 0.18rem solid var(--primary-white); */
+}
+#nav-con-btn{
+  margin-bottom:0.5rem;
+}
+.navbar-nav > a.active , .navbar-nav>  .nav-link:focus{
+  border-bottom: 0.18rem solid var(--primary-blue);
+}
 body{
   font-family: "mulish" "san-serif";
 }
