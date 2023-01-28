@@ -20,7 +20,7 @@ const footer = () => {
            
              <ul className="con-fotfin">
                <li>
-               <h3 >Contact us</h3>
+               <h3 id='fot-con-head'>Contact us</h3>
                </li>
                 <a id='foot-link' href="mailto:acm@sathyabama.ac.in" target="/blank"><li id='foot-hover'>
                    <img src={Email} alt="" /> Mail

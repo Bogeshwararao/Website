@@ -5,9 +5,9 @@ body{
     font-family: "mulish" "san-serif";
   }
  .acmfootlogo{
-    width:4.5rem;
+    /* width:4.5rem; */
     /* margin-left:12.5rem; */
-    height:4.5rem;
+    /* height:4.5rem; */
 }
 .sistfootlogo{
          width: 15.0rem;
@@ -25,21 +25,27 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: #6442E3;  
+    background-color: #4B29CB;  
     /* 6442E3 */
-    border-top-left-radius: 400px;
-	border-top-right-radius:40px;
+    /* border-top-left-radius: 400px;
+	border-top-right-radius:40px; */
 }
 .res-foot{
     padding-top:2.5rem;
     padding-left:3.5rem;
     padding-right:3.5rem;
+    /* padding-bottom:0.5rem; */
 }
+#fot-con-head{
+    color:#fff;
+
+    }
 #foot-link{
+    /* margin-bottom:2.5rem; */
     text-decoration: none;
-    color:#000;
+    color:#fff;
 
 }
-#foot-hover:hover{
+/* #foot-hover:hover{
     transform: scale(1.10);
-}
+} */

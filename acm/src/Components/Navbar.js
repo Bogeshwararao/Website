@@ -5,7 +5,7 @@ import { BrowserRouter ,
 Routes,
 Route,
 Link } from "react-router-dom";
-import ACMlogo from "../Assets/acmnav.png";
+import ACMlogo from "../Assets/acmnav1.png";
 import  Home from "../Screens/Home";
 import About from "../Screens/About";
 import Team from "../Screens/Team";
