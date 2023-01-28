@@ -15,6 +15,7 @@ body{
  
  }
  .con-fotfin{
+    /* margin-bottom:1.5rem; */
     list-style:none;
     font-weight: 500;
     font-size: 0.9rem;
