@@ -40,7 +40,7 @@ const Contact = () => {
     }
   return (
     <>
-    <div data-aos="flip-left">
+    <div data-aos="fade-up">
     <form onSubmit={(e)=>submit(e)}>      
      <section>
       <div

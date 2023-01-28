@@ -17,9 +17,9 @@ const About = () => {
         <div className="col-10 mx-5">
           <div className="row">
             <div className="col-md-6 pb-2 pt-5 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column" data-aos="fade-right">
-              <h2>
+              <h1>
                 MY VISON 
-              </h2>
+              </h1>
               <h5 style={{ inlineHeight: "0.5" }}>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages
               </h5>
@@ -41,9 +41,9 @@ const About = () => {
         <div className="col-10 mx-5">
           <div className="row">
             <div className="col-md-6 pb-2 pt-5 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column" data-aos="fade-left">
-              <h2>
+              <h1>
                 OUR AIM
-              </h2>
+              </h1>
               <h5 style={{ inlineHeight: "0.5" }}>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages
               </h5>
@@ -64,9 +64,9 @@ const About = () => {
         <div className="col-10 mx-5">
           <div className="row">
             <div className="col-md-6 pb-2 pt-5 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column" data-aos="fade-right">
-              <h2>
+              <h1>
                 MY VISON 
-              </h2>
+              </h1>
               <h5 style={{ inlineHeight: "0.5" }}>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages
               </h5>
