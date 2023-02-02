@@ -9,6 +9,7 @@ const Home = () => {
     Aos.init({duration: 1800});
 },[]);
   return (
+    <>
     <div data-aos="fade-left">
         <Slider />
         
@@ -25,8 +26,10 @@ const Home = () => {
                        
 
                 </div>
+                </div>
+
                        <Footer />
-                       </div>
+               </>       
                        
   )
 }
