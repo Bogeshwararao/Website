@@ -10,8 +10,8 @@ import Snowlin from "../Assets/Snowlin.jpg"
 import Hibha from "../Assets/Hibha.jpg"
 import Arun from "../Assets/Arun.jpg"
 import Syed from "../Assets/syed.jpg"
-
-
+import Kannan from "../Assets/Kannan.jpg"
+import Rohith from "../Assets/Rohith.jpg"
 
 
 
@@ -42,7 +42,7 @@ const Leaddetails = [
     },
     {
       title: "Kannan R",
-      imgsrc: Abhi,
+      imgsrc: Kannan,
       description: "Vice-Chairperson, ACM SIST",
       maillink: "mailto:ramukannan350@gmail.com",
       instalink:"https://www.instagram.com/kannan_ramu_02/",
@@ -107,7 +107,7 @@ const Leaddetails = [
 
     {
       title: "Rohit Kumar S",
-      imgsrc: Abhi,
+      imgsrc: Rohith,
       description: "Lead, Management Team",
       maillink: "",
       instalink:"",

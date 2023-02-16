@@ -50,7 +50,7 @@ function CollapsibleExample() {
         <Route path='/Team' element={<Team />}/>
         <Route path='/Event' element={<Event />}/>
         <Route path='/Contact' element={<Contact />}/>
-        </Routes>
+    </Routes>
     
    </div>
     </div>
